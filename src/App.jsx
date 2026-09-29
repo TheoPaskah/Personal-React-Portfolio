@@ -1,5 +1,5 @@
 import DataImage from './data';
-import {listTools} from './data';
+import {listTools, listProyek} from './data';
 
 function App() {
   return (
@@ -7,7 +7,7 @@ function App() {
       <div className="hero grid md:grid-cols-2 items-center pt-10 xl:gap-0 gap-6 grid-cols-1">
         <div>
           <div className='flex items-center gap-3 mb-6 bg-zinc-800 w-fit p-4 rounded-2xl'>
-            <img src={DataImage.HeroImage} alt="HeroImage" className='w-10 rounded-md' />
+            <img src={DataImage.HeroImage} alt="HeroImage" className='w-10 rounded-md' loading='lazy' />
             <q>
               All big things come from small beginnings.
             </q>
@@ -27,7 +27,7 @@ function App() {
             </a>
           </div>
         </div>
-        <img src={DataImage.HeroImage} alt="Hero Image" className='w-[500px] md:ml-auto' />
+        <img src={DataImage.HeroImage} alt="Hero Image" className='w-[500px] md:ml-auto' loading='lazy' />
       </div>
 
       {/* About */}
@@ -40,7 +40,7 @@ function App() {
             Saat ini saya terus mengembangkan kemampuan melalui berbagai proyek akademik, proyek pribadi, serta pengalaman berorganisasi. Saya memiliki semangat untuk terus belajar dan mencoba teknologi baru, sekaligus memperkuat kemampuan teknis dan problem solving. Bagi saya, setiap proyek merupakan kesempatan untuk mendapatkan pengalaman baru dan menjadi developer yang lebih baik.
           </p>
           <div className='flex items-center justify-between'>
-            <img src={DataImage.HeroImage} alt="Image" className='w-12 rounded-md sm:block hidden' />
+            <img src={DataImage.HeroImage} alt="Image" className='w-12 rounded-md sm:block hidden' loading='lazy' />
             <div className='flex items-center gap-6'>
               <div>
                 <h1 className='text-4xl mb-1'>
@@ -73,7 +73,7 @@ function App() {
 
             {listTools.map((tool) => (
               <div className='flex items-center gap-2 p-3 border border-zinc-600 rounded-md hover:border-zinc-800  group' key={tool.id}>
-                <img src={tool.gambar} alt="Tools Image" className='w-14 bg-zinc-800 p-1 group-hover:bg-zinc-900'/>
+                <img src={tool.gambar} alt="Tools Image" className='w-14 bg-zinc-800 p-1 group-hover:bg-zinc-900' loading='lazy'/>
                 <div>
                   <h4 className='font-bold'>
                     {tool.nama}
@@ -89,6 +89,44 @@ function App() {
         </div>
       </div>
       {/* About */}
+
+      {/* Project */}
+      <div className="project mt-32 py-10">
+        <h1 className='text-center text-4xl font-bold mb-2'>
+          Project
+        </h1>
+        <p className='text-base/loose text-center opacity-50'>
+          Description:
+        </p>
+        <div className="project-box mt-14 grid lg:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-4">
+            {listProyek.map(proyek => (
+              <div key={proyek.id} className='p-4 bg-zinc-800 rounded-md'>
+                <img src={proyek.gambar} alt="Project Image" loading='lazy' />
+                <div>
+                  <h1 className='text-2xl font-bold my-4'>
+                    {proyek.nama}
+                  </h1>
+                  <p className='text-base/loose mb-4'>
+                    {proyek.desk}
+                  </p>
+                  <div className='flex flex-wrap gap-2'>
+                    {proyek.tools.map((tool, index) =>(
+                      <p className='py-1 px-3 border border-zinc-500 bg-zinc-600 rounded-md font-semibold' key={index}>
+                        {tool}
+                      </p>
+                    ))}
+                  </div>
+                  <div className='mt-8 text-center'>
+                    <a href="#" className='bg-violet-700 p-3 rounded-lg block border border-zinc-600'>
+                      Lihat Website
+                    </a>
+                  </div>
+                </div>
+              </div>
+            ))}
+        </div>
+      </div>
+      {/* Project */}
     </>
   );
 }
