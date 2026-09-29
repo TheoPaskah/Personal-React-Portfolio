@@ -22,8 +22,8 @@ function App() {
             <a href="#" className='bg-violet-700 p-4 rounded-2xl hover:bg-violet-600'>
               Download CV <i className="ri-download-line ri-lg"></i>
             </a>
-            <a href="#" className='bg-zinc-700 p-4 rounded-2xl hover:bg-zinc-600'>
-              Lihat Project <i className="ri-arrow-down-line ri-lg"></i>
+            <a href="#project" className='bg-zinc-700 p-4 rounded-2xl hover:bg-zinc-600'>
+              See Project <i className="ri-arrow-down-line ri-lg"></i>
             </a>
           </div>
         </div>
@@ -31,7 +31,7 @@ function App() {
       </div>
 
       {/* About */}
-      <div className="about mt-32 py-10">
+      <div className="about mt-32 py-10" id='about'>
         <div className='xl:w-2/3 lg:w-3/4 w-full mx-auto p-7 bg-zinc-800 rounded-lg' data-aos="fade-up" data-aos-duration="1000" data-aos-once="true">
           <img src={DataImage.HeroImage} alt="Image" className='w-12 rounded-mb mb-10 sm:hidden' />
           <p className='text-base/loose mb-10'>
@@ -91,7 +91,7 @@ function App() {
       {/* About */}
 
       {/* Project */}
-      <div className="project mt-32 py-10">
+      <div className="project mt-32 py-10" id='project'>
         <h1 className='text-center text-4xl font-bold mb-2'>
           Project
         </h1>
@@ -118,7 +118,7 @@ function App() {
                   </div>
                   <div className='mt-8 text-center'>
                     <a href="#" className='bg-violet-700 p-3 rounded-lg block border border-zinc-600'>
-                      Lihat Website
+                      View Details
                     </a>
                   </div>
                 </div>
@@ -129,7 +129,7 @@ function App() {
       {/* Project */}
 
       {/* Contact */}
-      <div className="contact mt-32 sm:p-10 p-0">
+      <div className="contact mt-32 sm:p-10 p-0" id='contact'>
         <h1 className='text-4xl mb-2 font-bold text-center mb-10 opacity-50' data-aos="fade-up" data-aos-duration="1000" data-aos-once="true">
           Contact
         </h1>

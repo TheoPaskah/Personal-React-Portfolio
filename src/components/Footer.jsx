@@ -1,18 +1,18 @@
 const Footer = () => {
   return (
-    <div className="mt-32 py-4 flex justify md:flex-row flex-col gap-6 md:gap-0 items-center">
+    <div className="mt-32 py-4 flex md:flex-row flex-col gap-6 md:gap-0 justify-between items-center">
       <h1 className="text-2xl font-bold">
         Portfolio
       </h1>
       <div className="flex gap-7">
-        <a href="#">
-          Beranda
+        <a href="#home">
+          Home
         </a>
-        <a href="#">
-          Tentang
+        <a href="#about">
+          About
         </a>
-        <a href="#">
-          Proyek
+        <a href="#project">
+          Project
         </a>
       </div>
       <div className="flex items-center gap-3">
@@ -26,7 +26,7 @@ const Footer = () => {
           <i className="ri-linkedin-fill ri-2x"></i>
         </a>
         <a href="#">
-          <i className="ri-telp-fill ri-2x"></i>
+          <i className="ri-whatsapp-fill ri-2x"></i>
         </a>
       </div>
     </div>
