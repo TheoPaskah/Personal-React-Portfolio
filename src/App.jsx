@@ -32,7 +32,7 @@ function App() {
 
       {/* About */}
       <div className="about mt-32 py-10">
-        <div className='xl:w-2/3 lg:w-3/4 w-full mx-auto p-7 bg-zinc-800 rounded-lg'>
+        <div className='xl:w-2/3 lg:w-3/4 w-full mx-auto p-7 bg-zinc-800 rounded-lg' data-aos="fade-up" data-aos-duration="1000" data-aos-once="true">
           <img src={DataImage.HeroImage} alt="Image" className='w-12 rounded-mb mb-10 sm:hidden' />
           <p className='text-base/loose mb-10'>
             Halo, saya Theo, mahasiswa Sistem Informasi yang memiliki ketertarikan pada dunia teknologi, khususnya dalam pengembangan web dan pemrograman. Saya menikmati proses mempelajari bagaimana sebuah sistem bekerja, menemukan solusi dari suatu permasalahan, dan mengubah ide menjadi aplikasi yang dapat digunakan.
@@ -63,16 +63,16 @@ function App() {
         </div>
 
         <div className="tools mt-32">
-          <h1 className='4-xl/snug font-bold mb-4'>
+          <h1 className='4-xl/snug font-bold mb-4' data-aos="fade-up" data-aos-duration="1000">
             Tools Used
           </h1>
-          <p className='xl:w-2/5 lg:w-2/4 md:w-2/3 sm:w-3/4 text-base/loose opacity-50'>
+          <p className='xl:w-2/5 lg:w-2/4 md:w-2/3 sm:w-3/4 text-base/loose opacity-50' data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300" data-aos-once="true">
             Deskripsi tools
           </p>
           <div className="tools-box mt-14 grid lg:grid-cols-4 md:grid-cols-3 sm:grid-cols-2 gap-4">
 
             {listTools.map((tool) => (
-              <div className='flex items-center gap-2 p-3 border border-zinc-600 rounded-md hover:border-zinc-800  group' key={tool.id}>
+              <div className='flex items-center gap-2 p-3 border border-zinc-600 rounded-md hover:border-zinc-800  group' key={tool.id} data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300" data-aos-once="true">
                 <img src={tool.gambar} alt="Tools Image" className='w-14 bg-zinc-800 p-1 group-hover:bg-zinc-900' loading='lazy'/>
                 <div>
                   <h4 className='font-bold'>
@@ -95,12 +95,12 @@ function App() {
         <h1 className='text-center text-4xl font-bold mb-2'>
           Project
         </h1>
-        <p className='text-base/loose text-center opacity-50'>
+        <p className='text-base/loose text-center opacity-50' data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300" data-aos-once="true">
           Description:
         </p>
         <div className="project-box mt-14 grid lg:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-4">
             {listProyek.map(proyek => (
-              <div key={proyek.id} className='p-4 bg-zinc-800 rounded-md'>
+              <div key={proyek.id} className='p-4 bg-zinc-800 rounded-md' data-aos="fade-up" data-aos-duration="1000" data-aos-delay={proyek.dad} data-aos-once="true">
                 <img src={proyek.gambar} alt="Project Image" loading='lazy' />
                 <div>
                   <h1 className='text-2xl font-bold my-4'>
@@ -130,13 +130,13 @@ function App() {
 
       {/* Contact */}
       <div className="contact mt-32 sm:p-10 p-0">
-        <h1 className='text-4xl mb-2 font-bold text-center mb-10 opacity-50'>
+        <h1 className='text-4xl mb-2 font-bold text-center mb-10 opacity-50' data-aos="fade-up" data-aos-duration="1000" data-aos-once="true">
           Contact
         </h1>
-        <p className='text-base/loose text-center mb-10 opacity-50'>
+        <p className='text-base/loose text-center mb-10 opacity-50' data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300" data-aos-once="true">
           Let's connect.
         </p>
-        <form action="https://formsubmit.co/theostevanopaskah@gmail.com" method="POST" className='bg-zinc-800 p-10  sm:w-fit w-full mx-0 rounded-md' autoComplete='off'>
+        <form action="https://formsubmit.co/theostevanopaskah@gmail.com" method="POST" className='bg-zinc-800 p-10  sm:w-fit w-full mx-0 rounded-md mx-auto' autoComplete='off' data-aos="fade-up" data-aos-duration="1000" data-aos-delay="500" data-aos-once="true">
           <div className='flex flex-col gap-6'>
             <div className='flex flex-col gap-2'>
               <label htmlFor="" className='font-semibold'>
