@@ -16,7 +16,7 @@ function App() {
             Hello there! I'am Theo Stevanno Paskah
           </h1>
           <p className='text-base/loose mb-6 opacity-50'>
-            Saya adalah mahasiswa Sistem Informasi yang memiliki ketertarikan pada pengembangan perangkat lunak dan teknologi. Saya senang membangun aplikasi berbasis web, memecahkan masalah teknis, serta mempelajari teknologi baru. Melalui berbagai proyek akademik, kegiatan organisasi, dan proyek pribadi, saya terus mengembangkan kemampuan dalam pemrograman, pengembangan web, dan problem solving. Saya terbuka untuk terus belajar, mengembangkan kemampuan, dan menciptakan solusi yang bermanfaat melalui teknologi.
+            I'm an Information Systems student who enjoys problem-solving, experimenting, and learning new technologies. I have experience with SQL, Figma, programming, and web development through academic, work, and personal projects. I'm interested in pursuing a career as a Data Analyst or System Analyst while continuing to grow my technical and analytical skills.
           </p>
           <div className='flex items-center sm:gap-4 gap-2'>
             <a href="#" className='bg-violet-700 p-4 rounded-2xl hover:bg-violet-600'>
@@ -27,7 +27,7 @@ function App() {
             </a>
           </div>
         </div>
-        <img src={DataImage.HeroImage} alt="Hero Image" className='w-[500px] md:ml-auto animate__animated animate__fadeInUp animate__delay-4s' loading='lazy' />
+        <img src={DataImage.HeroImage} alt="Hero Image" className='w-[500px] md:ml-auto animate__animated animate__fadeInUp animate__delay-4s rounded-md' loading='lazy' />
       </div>
 
       {/* About */}
@@ -35,9 +35,11 @@ function App() {
         <div className='xl:w-2/3 lg:w-3/4 w-full mx-auto p-7 bg-zinc-800 rounded-lg' data-aos="fade-up" data-aos-duration="1000" data-aos-once="true">
           <img src={DataImage.HeroImage} alt="Image" className='w-12 rounded-mb mb-10 sm:hidden' />
           <p className='text-base/loose mb-10'>
-            Halo, saya Theo, mahasiswa Sistem Informasi yang memiliki ketertarikan pada dunia teknologi, khususnya dalam pengembangan web dan pemrograman. Saya menikmati proses mempelajari bagaimana sebuah sistem bekerja, menemukan solusi dari suatu permasalahan, dan mengubah ide menjadi aplikasi yang dapat digunakan.
+            I'm an Information Systems student with a strong interest in technology, problem-solving, and analytical thinking. I enjoy understanding how things work, breaking down problems, and exploring different approaches to find practical solutions. For me, learning technology is not just about using tools, but also about understanding how they can be applied to solve real problems.
 
-            Saat ini saya terus mengembangkan kemampuan melalui berbagai proyek akademik, proyek pribadi, serta pengalaman berorganisasi. Saya memiliki semangat untuk terus belajar dan mencoba teknologi baru, sekaligus memperkuat kemampuan teknis dan problem solving. Bagi saya, setiap proyek merupakan kesempatan untuk mendapatkan pengalaman baru dan menjadi developer yang lebih baik.
+            Through academic projects, work experience, and personal projects, I've had the opportunity to work with programming, SQL, Figma, and web development. These experiences have helped me develop both my technical and analytical skills while teaching me to approach problems from different perspectives.
+
+            I'm naturally curious and enjoy experimenting with new ideas and technologies. In the future, I'm interested in pursuing a career as a Data Analyst or System Analyst, while continuing to strengthen my programming and technical skills. I'm always looking for opportunities to learn, build, and turn ideas into practical solutions.
           </p>
           <div className='flex items-center justify-between'>
             <img src={DataImage.HeroImage} alt="Image" className='w-12 rounded-md sm:block hidden' loading='lazy' />
@@ -66,8 +68,8 @@ function App() {
           <h1 className='4-xl/snug font-bold mb-4' data-aos="fade-up" data-aos-duration="1000">
             Tools Used
           </h1>
-          <p className='xl:w-2/5 lg:w-2/4 md:w-2/3 sm:w-3/4 text-base/loose opacity-50' data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300" data-aos-once="true">
-            Deskripsi tools
+          <p className='xl:w-2/5 lg:w-2/4 md:w-2/3 sm:w-3/4 text-base/loose text-white/50' data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300" data-aos-once="true">
+            Here are some of the tools and technologies I use to build projects, solve problems, and bring ideas into practical solutions.
           </p>
           <div className="tools-box mt-14 grid lg:grid-cols-4 md:grid-cols-3 sm:grid-cols-2 gap-4">
 
@@ -95,8 +97,8 @@ function App() {
         <h1 className='text-center text-4xl font-bold mb-2'>
           Project
         </h1>
-        <p className='text-base/loose text-center opacity-50' data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300" data-aos-once="true">
-          Description:
+        <p className='text-base/loose text-center text-white/50' data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300" data-aos-once="true">
+          A collection of projects I've worked on through academic assignments, work experience, and personal projects. Each project has given me an opportunity to solve problems, explore new technologies, and turn ideas into practical solutions while continuously improving my skills.
         </p>
         <div className="project-box mt-14 grid lg:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-4">
             {listProyek.map(proyek => (
@@ -140,25 +142,25 @@ function App() {
           <div className='flex flex-col gap-6'>
             <div className='flex flex-col gap-2'>
               <label htmlFor="" className='font-semibold'>
-                Nama Lengkap
+                Fullname
               </label>
-              <input type="text" name='nama' placeholder='Masukkan Nama...' className='border border-zinc-500 p-2 rounded-md' required />
+              <input type="text" name='nama' placeholder='Enter Fullname...' className='border border-zinc-500 p-2 rounded-md' required />
             </div>
             <div className='flex flex-col gap-2'>
               <label htmlFor="" className='font-semibold'>
                 Email
               </label>
-              <input type="email" name='email' placeholder='Masukkan Email...' className='border border-zinc-500 p-2 rounded-md' required />
+              <input type="email" name='email' placeholder='Enter Email...' className='border border-zinc-500 p-2 rounded-md' required />
             </div>
             <div className='flex flex-col gap-2'>
               <label htmlFor="pesan" className='font-semibold'>
-                Pesan
+                Message
               </label>
-              <textarea name="pesan" id="pesan" cols="45" rows="7" className='border border-zinc-500 p-2 rounded-md' placeholder='Pesan...' required></textarea>
+              <textarea name="pesan" id="pesan" cols="45" rows="7" className='border border-zinc-500 p-2 rounded-md' placeholder='Message...' required></textarea>
             </div>
             <div className='text-center'>
               <button type='submit' className='bg-violet-700 p-3 rounded-lg w-full cursor-pointer block border border-zinc-600 hover:bg-violet-600'>
-                Kirim Pesan
+                Send Message
               </button>
             </div>
           </div>
