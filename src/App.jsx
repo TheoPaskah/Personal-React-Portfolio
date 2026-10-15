@@ -46,18 +46,18 @@ function App() {
             <div className='flex items-center gap-6'>
               <div>
                 <h1 className='text-4xl mb-1'>
-                  45<span className='text-violet-500'>+</span>
+                  6<span className='text-violet-500'>+</span>
                 </h1>
                 <p>
-                  Proyek selesai
+                  Completed Projects
                 </p>
               </div>
               <div>
                 <h1 className='text-4xl mb-1'>
-                  4 <span className='text-violet-500'>+</span>
+                  1 <span className='text-violet-500'>+</span>
                 </h1>
                 <p>
-                  Tahun Pengalaman
+                  Work Experience
                 </p>
               </div>
             </div>
@@ -129,6 +129,17 @@ function App() {
         </div>
       </div>
       {/* Project */}
+
+      {/* Certificate */}
+      <div className="certificate mt-32 py-10 id=certificate">
+        <h1 className='text-center text-4xl font-bold mb-2'>
+          Certificate
+        </h1>
+        <p className='text-base/loose text-center text-white/50' data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300" data-aos-once="true">
+          A collection of certificates I've earned through courses, training, and various learning experiences as I continue to develop my technical skills and explore new areas of technology.
+        </p>
+      </div>
+      {/* Certificate */}
 
       {/* Contact */}
       <div className="contact mt-32 sm:p-10 p-0" id='contact'>

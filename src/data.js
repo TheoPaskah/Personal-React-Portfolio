@@ -98,59 +98,60 @@ export const listTools = [
   },
 ];
 
-import InvestMe from "/assets/proyek/InvestMe.png";
-import VinCraft from "/assets/proyek/VinCraft.png";
+import InvestMe from "/assets/proyek/InvestMe.webp";
+import VinCraft from "/assets/proyek/VinCraft.webp";
 import BookMart from "/assets/proyek/BookMart.png";
 import WebsiteDev from "/assets/proyek/WebsiteDev.png";
 import DashGarment from "/assets/proyek/DashGarment.png";
+import Comserv from "/assets/proyek/Comserv.webp";
 
 export const listProyek = [
   {
     id: 1,
     gambar: InvestMe,
     nama: "InvestMe",
-    desk: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quis, laborum!",
-    tools: ["HTML", "CSS", "Javascript", "AOS"],
+    desk: "A UI/UX design group project of 3 developed for a competition focused on empowering MSMEs through investment opportunities. The platform allows MSMEs to seek investors for their businesses, while investors can discover MSMEs to invest in. I was responsible for designing the MSME interface.",
+    tools: ["Figma"],
     dad: "200",
   },
   {
     id: 2,
-    gambar: BookMart,
-    nama: "BookMart System Security Analysis",
-    desk: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quis, laborum!",
-    tools: ["HTML", "CSS", "Javascript", "AOS", "Swiper", "Lightbox Gallery"],
+    gambar: Comserv,
+    nama: "Student Activity Management Website",
+    desk: "A web-based system developed to manage student community service activities. Students can register for community service events, while administrators can manage events and assign community service hours. My responsibilities included designing and redesigning interfaces, developing dashboard and protest form pages, conducting software testing, and preparing Functional Specification Documents (FSD).",
+    tools: ["Figma", "DBeaver", "SQL", "Visual Studio"],
     dad: "300",
   },
   {
     id: 3,
     gambar: VinCraft,
     nama: "VinCraft",
-    desk: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quis, laborum!",
-    tools: ["Vite", "ReactJS", "TailwindCSS", "AOS"],
+    desk: "A Minecraft community website developed as a programming lab project, where users can share their builds and administrators can manage website content. I contributed to most of the development process, implementing core website functionality, including login, CRUD operations, and administrative features. The website runs locally using PHP and XAMPP.",
+    tools: ["PHP", "XAMPP", "SQL", "Visual Studio Code"],
     dad: "400",
   },
   {
     id: 4,
     gambar: WebsiteDev,
     nama: "Responsive Web Development",
-    desk: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quis, laborum!",
-    tools: ["Vite", "ReactJS", "Bootstrap", "AOS"],
+    desk: "A personal project focused on practicing responsive web development using HTML and CSS while following structured coding practices and Git version control. I independently developed the websites using assets provided by Frontend Mentor and published the project repositories on GitHub. The websites can be run locally.",
+    tools: ["HTML", "CSS", "Visual Studio COde", "Git", "Github"],
     dad: "500",
   },
   {
     id: 5,
     gambar: DashGarment,
     nama: "PT. Dash Garment Database Analysis",
-    desk: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quis, laborum!",
-    tools: ["HTML", "CSS", "Javascript", "Bootsrap"],
+    desk: "A database analysis and design project for PT. Dash Garment, focusing on developing a structured database based on established design practices, including Third Normal Form (3NF) normalization. I contributed throughout the design process, from conceptual modeling to logical database design, and helped prepare the project documentation.",
+    tools: ["Microsoft Word", "SQL"],
     dad: "600",
   },
   {
     id: 6,
-    gambar: DashGarment,
-    nama: "Student Activity Management Website",
-    desk: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quis, laborum!",
-    tools: ["NextJS", "TailwindCSS", "Framermotion"],
+    gambar: BookMart,
+    nama: "BookMart System Security Analysis",
+    desk: "A system security planning project for the DIGIN competition organized by HIMSISFO, addressing a bookstore system following a data breach. My contributions included analyzing vulnerabilities in multi-platform integrations, identifying attack vectors involving human error, and structuring an OTP/MFA authentication workflow. The findings and proposed security measures were documented in a formal report.",
+    tools: ["Microsoft Word"],
     dad: "700",
   },
 ];
