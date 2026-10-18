@@ -1,5 +1,5 @@
 import DataImage from './data';
-import {listTools, listProyek} from './data';
+import {listTools, listProyek, listCertificate} from './data';
 
 function App() {
   return (
@@ -19,7 +19,9 @@ function App() {
             I'm an Information Systems student who enjoys problem-solving, experimenting, and learning new technologies. I have experience with SQL, Figma, programming, and web development through academic, work, and personal projects. I'm interested in pursuing a career as a Data Analyst or System Analyst while continuing to grow my technical and analytical skills.
           </p>
           <div className='flex items-center sm:gap-4 gap-2'>
-            <a href="#" className='bg-violet-700 p-4 rounded-2xl hover:bg-violet-600'>
+            <a href={`${import.meta.env.BASE_URL}TheoStevannoPaskah_CV.pdf`} 
+            download="TheoStevannoPaskah_CV.pdf"
+            className='bg-violet-700 p-4 rounded-2xl hover:bg-violet-600'>
               Download CV <i className="ri-download-line ri-lg"></i>
             </a>
             <a href="#project" className='bg-zinc-700 p-4 rounded-2xl hover:bg-zinc-600'>
@@ -54,7 +56,7 @@ function App() {
               </div>
               <div>
                 <h1 className='text-4xl mb-1'>
-                  1 <span className='text-violet-500'>+</span>
+                  1<span className='text-violet-500'>+</span>
                 </h1>
                 <p>
                   Work Experience
@@ -119,7 +121,7 @@ function App() {
                     ))}
                   </div>
                   <div className='mt-8 text-center'>
-                    <a href="#" className='bg-violet-700 p-3 rounded-lg block border border-zinc-600'>
+                    <a href={proyek.link} target='_blank' rel='noopener noreferrer' className='bg-violet-700 p-3 rounded-lg block border border-zinc-600 hover:bg-violet-800 transition-all'>
                       View Details
                     </a>
                   </div>
@@ -131,13 +133,28 @@ function App() {
       {/* Project */}
 
       {/* Certificate */}
-      <div className="certificate mt-32 py-10 id=certificate">
+      <div className="certificate mt-32 py-10" id="certificate">
         <h1 className='text-center text-4xl font-bold mb-2'>
-          Certificate
+          Certificate & Volunteer
         </h1>
         <p className='text-base/loose text-center text-white/50' data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300" data-aos-once="true">
-          A collection of certificates I've earned through courses, training, and various learning experiences as I continue to develop my technical skills and explore new areas of technology.
+          A collection of certificates and volunteer experiences i have earned through courses, training, and various learning experiences as I continue to develop my technical skills and explore new areas of technology.
         </p>
+        <div className="certificate-box mt-14 grid lg:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-4">
+            {listCertificate.map(certificate => (
+              <div key={certificate.id} className='p-4 bg-zinc-800 rounded-md' data-aos="fade-up" data-aos-duration="1000" data-aos-delay={certificate.dad} data-aos-once="true">
+                <img src={certificate.gambar} alt="Project Image" loading='lazy' />
+                <div>
+                  <h1 className='text-2xl font-bold my-4'>
+                    {certificate.nama}
+                  </h1>
+                  <p className='text-base/loose mb-4'>
+                    {certificate.desk}
+                  </p>
+                </div>
+              </div>
+            ))}
+        </div>
       </div>
       {/* Certificate */}
 
