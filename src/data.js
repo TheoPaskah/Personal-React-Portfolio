@@ -106,7 +106,7 @@ export const listProyek = [
     id: 2,
     gambar: Comserv,
     nama: "Student Activity Management Website",
-    desk: "A web-based system developed to manage student community service activities. Students can register for community service events, while administrators can manage events and assign community service hours. My responsibilities included designing and redesigning interfaces, developing dashboard and protest form pages, conducting software testing, and preparing Functional Specification Documents (FSD).",
+    desk: "A professional project I contributed to during my part-time experience as a System Analyst. The web-based system manages student community service activities, allowing students to register for events while administrators manage events and assign service hours. My responsibilities included designing and refining user interfaces, developing dashboard and request form pages, conducting software testing, and updating Functional Specification Documents (FSD).",
     tools: ["Figma", "DBeaver", "SQL", "Visual Studio"],
     link: "https://www.figma.com/design/2AjaYjXxPS0oFZOd3B4NGH/portfolio?node-id=0-1&t=u0WOxH5GTTfi7ZNR-1",
     dad: "300",

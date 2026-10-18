@@ -16,7 +16,7 @@ function App() {
             Hello there! I'am Theo Stevanno Paskah
           </h1>
           <p className='text-base/loose mb-6 opacity-50'>
-            I'm an Information Systems student who enjoys problem-solving, experimenting, and learning new technologies. I have experience with SQL, Figma, programming, and web development through academic, work, and personal projects. I'm interested in pursuing a career as a Data Analyst or System Analyst while continuing to grow my technical and analytical skills.
+            I'm an Information Systems student and part-time System Analyst with an interest in technology, problem-solving, and data-driven solutions. Through work, academic, and personal projects, I have gained experience in software testing, SQL, programming, data visualization, and UI/UX design. I'm looking to grow my technical and analytical skills while exploring opportunities in Data Analysis and Systems Analysis.
           </p>
           <div className='flex items-center sm:gap-4 gap-2'>
             <a href={`${import.meta.env.BASE_URL}TheoStevannoPaskah_CV.pdf`} 
@@ -37,11 +37,13 @@ function App() {
         <div className='xl:w-2/3 lg:w-3/4 w-full mx-auto p-7 bg-zinc-800 rounded-lg' data-aos="fade-up" data-aos-duration="1000" data-aos-once="true">
           <img src={DataImage.HeroImage} alt="Image" className='w-12 rounded-mb mb-10 sm:hidden' />
           <p className='text-base/loose mb-10'>
-            I'm an Information Systems student with a strong interest in technology, problem-solving, and analytical thinking. I enjoy understanding how things work, breaking down problems, and exploring different approaches to find practical solutions. For me, learning technology is not just about using tools, but also about understanding how they can be applied to solve real problems.
+            I'm an Information Systems student with a strong interest in technology, problem-solving, and analytical thinking. I enjoy understanding how things work, breaking down problems, and exploring different approaches to find practical solutions.
 
-            Through academic projects, work experience, and personal projects, I've had the opportunity to work with programming, SQL, Figma, and web development. These experiences have helped me develop both my technical and analytical skills while teaching me to approach problems from different perspectives.
+            Currently, I work part-time as a System Analyst at BINUS IT Division, where I gain hands-on experience in website testing, interface evaluation, and preparing Functional Specification Documents (FSD). This experience has helped me better understand how information systems are developed, tested, and improved to meet user needs.
 
-            I'm naturally curious and enjoy experimenting with new ideas and technologies. In the future, I'm interested in pursuing a career as a Data Analyst or System Analyst, while continuing to strengthen my programming and technical skills. I'm always looking for opportunities to learn, build, and turn ideas into practical solutions.
+            Through academic projects, work experience, and personal projects, I've also gained experience with programming, SQL, Figma, and web development. These experiences have strengthened my technical and analytical skills while teaching me to approach problems from different perspectives.
+
+            I'm naturally curious and enjoy experimenting with new ideas and technologies. In the future, I'm interested in pursuing a career as a Data Analyst or System Analyst while continuing to strengthen my programming and technical skills. I'm always looking for opportunities to learn, build, and turn ideas into practical solutions.
           </p>
           <div className='flex items-center justify-between'>
             <img src={DataImage.HeroImage} alt="Image" className='w-12 rounded-md sm:block hidden' loading='lazy' />
