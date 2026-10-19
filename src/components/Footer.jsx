@@ -14,6 +14,9 @@ const Footer = () => {
         <a href="#project">
           Project
         </a>
+        <a href="#certificate">
+          Certificate
+        </a>
       </div>
       <div className="flex items-center gap-3">
         <a href="https://github.com/TheoPaskah" target="_blank">
