@@ -15,6 +15,7 @@ import Tools7 from "/assets/tools/figma.png";
 import Tools8 from "/assets/tools/sql-server.png";
 import Tools9 from "/assets/tools/excel.png";
 import Tools10 from "/assets/tools/tableau.png";
+import Tools11 from "/assets/tools/draw.png";
 
 export const listTools = [
   {
@@ -80,6 +81,13 @@ export const listTools = [
     ket: "Database Management",
     dad: "1400",
   },
+  {
+    id: 9,
+    gambar: Tools11,
+    nama: "Draw.io",
+    ket: "System Modelling",
+    dad: "1500",
+  },
 ];
 
 import InvestMe from "/assets/proyek/InvestMe.webp";
@@ -91,6 +99,7 @@ import Comserv from "/assets/proyek/Comserv.webp";
 import gopay from "/assets/proyek/gopay.webp";
 import dashboard from "/assets/proyek/dashboard.png";
 import damod from "/assets/proyek/damod.png";
+import hampiness from "/assets/proyek/hampiness.png";
 
 export const listProyek = [
   {
@@ -173,6 +182,15 @@ export const listProyek = [
     tools: ["Word"],
     link: "https://drive.google.com/drive/folders/1Wi1VaU0QV4XLokllmbKtK_cMs3SdgC98?usp=sharing",
     dad: "1000",
+  },
+  {
+    id: 10,
+    gambar: hampiness,
+    nama: "ISAAD LAB Final Project",
+    desk: "Created Data Flow Diagrams (DFDs), Fishbone Diagrams, and Sequence Diagrams to model system processes, identify operational issues, and visualize system interactions for the Hampiness information system.",
+    tools: ["Word", "Draw.io"],
+    link: "https://docs.google.com/document/d/1-22Dr9WQ8kj3s9e0wIP2_VlnR5Kl4GyU/edit?usp=sharing&ouid=101230169937740648985&rtpof=true&sd=true",
+    dad: "1100",
   },
 ];
 
